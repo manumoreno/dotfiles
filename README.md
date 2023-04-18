@@ -7,7 +7,7 @@ Work in progres...
 * While most lsps and plugins appear to be working fine they might need further tweaking (e.g. indent_blankline)
 * Some plugin config files may not be in use. They are there because at some point I attempted to use them.
 
-### jtdls
+### jdtls lsp server
 This is a somewhat tricky lsp to configure. After 3 failed attempts at setting this LSP up I was finally able to make it work.
 
 Lessons learned:
