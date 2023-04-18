@@ -7,6 +7,8 @@ else
   print("Loading " .. plugin .. " plugin")
 end
 
+local java_home = '/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home'
+
 local data_path = vim.fn.stdpath("data")
 local jdtls_path = data_path .. '/mason/packages/jdtls'
 local platform_config = jdtls_path .. "/config_mac"
@@ -28,7 +30,7 @@ local config = {
   -- The command that starts the language server
   -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
   cmd = {
-    '/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/bin/java',
+    java_home .. '/bin/java',
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
     '-Dosgi.bundles.defaultStartLevel=4',
     '-Declipse.product=org.eclipse.jdt.ls.core.product',
@@ -53,7 +55,7 @@ local config = {
   -- for a list of options
   settings = {
     java = {
-      home = '/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home',
+      home = java_home,
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
       eclipse = {
         downloadSources = true,
