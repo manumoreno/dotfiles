@@ -10,11 +10,11 @@ Work in progres...
 ### jdtls lsp server
 This is a somewhat tricky lsp to configure. After 3 failed attempts at setting this LSP up I was finally able to make it work.
 
-Lessons learned:
+**Lessons learned:**
 
 1. Resist the temptation of installing binaries manually. Mason does a great job installing jdtls (as long as go is installed in your system).
 2. The config file creates the workspace directory automatically.
-3. Use the ```~/.config/nvim/ftplugin/java.lua``` config as the basis of your config and tweak as necessary. Be sure to test the values of the parameters at the top! I'm using a Macbook. E.g.
+3. Use the ```~/.config/nvim/ftplugin/java.lua``` config as the basis of your config and tweak as necessary. Be sure to test the values of the parameters at the top! Particularly the ones shown below. (I'm using a Macbook!)
 ```
 ...
 local lsp_server_path = jdtls_path .. "/config_mac"
@@ -26,9 +26,8 @@ cmd = {
 ...
 ```
 4. You can use this [Java style guide specification](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml).
-5. jtdls requires Java 17 or greater
-6. Make sure your XDG directories are properly set up in your user environment.
-Example:
+5. jtdls requires Java 17 or greater. Be sure your JAVA_HOME is set up correctly.
+6. Make sure your XDG directories are properly set up in your user environment. E.g.
 ```
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
