@@ -14,7 +14,7 @@ This is a somewhat tricky lsp to configure. After 3 failed attempts at setting t
 
 1. Resist the temptation of installing binaries manually. Mason does a great job installing jdtls (as long as go is installed in your system).
 2. The config file creates the workspace directory automatically.
-3. Use the ```~/.config/nvim/ftplugin/java.lua``` config as the basis of your config and tweak as necessary. Be sure to test the values of the parameters at the top! Particularly the ones shown below. (I'm using a Macbook!)
+3. Use [this jdtls config](https://github.com/manumoreno/dotfiles/blob/main/nvim/.config/nvim/ftplugin/java.lua) [```~/.config/nvim/ftplugin/java.lua``` on your system] as the basis for your config and tweak as necessary. Be sure to test the values of the parameters at the top! Particularly the ones shown below. (I'm using a Macbook!)
 ```
 ...
 local lsp_server_path = jdtls_path .. "/config_mac"
