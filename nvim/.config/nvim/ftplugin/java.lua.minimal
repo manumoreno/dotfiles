@@ -1,0 +1,19 @@
+local plugin = 'jdtls'
+local status_ok, jdtls = pcall(require, plugin)
+if not status_ok then
+	print("ERROR: " .. plugin .. " plugin")
+	return
+else
+  print("Loading " .. plugin .. " plugin")
+end
+
+
+local cmd = { vim.fn.stdpath('data') .. '/mason/packages/jdtls/bin/jdtls' }
+local root_dir = vim.fn.getcwd()
+
+local config = {
+    cmd = cmd,
+    root_dir = root_dir
+}
+
+jdtls.start_or_attach(config)
