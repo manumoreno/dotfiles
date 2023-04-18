@@ -62,7 +62,7 @@ local config = {
         updateBuildConfiguration = "interactive",
         runtimes = {
           {
-            name = "JavaSE-11",
+            name = "JDK-11",
             path = "/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home"
           }
         }
