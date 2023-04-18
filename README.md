@@ -17,12 +17,10 @@ This is a somewhat tricky lsp to configure. After 3 failed attempts at setting t
 3. Use [this jdtls config](https://github.com/manumoreno/dotfiles/blob/main/nvim/.config/nvim/ftplugin/java.lua) [```~/.config/nvim/ftplugin/java.lua``` on your system] as the basis for your config and tweak as necessary. Be sure to test the values of the parameters at the top! Particularly the ones shown below. (I'm using a Macbook!)
 ```
 ...
+local java_home = '/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home'
 local lsp_server_path = jdtls_path .. "/config_mac"
 local path_to_jar = jdtls_path .. "/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar"
 ...
-...
-cmd = {
-    '/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home/bin/java',
 ...
 ```
 4. You can use this [Java style guide specification](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml).
