@@ -9,7 +9,7 @@ end
 
 local data_path = vim.fn.stdpath("data")
 local jdtls_path = data_path .. '/mason/packages/jdtls'
-local lsp_server_path = jdtls_path .. "/config_mac"
+local platform_config = jdtls_path .. "/config_mac"
 local path_to_jar = jdtls_path .. "/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar"
 local lombok_path = jdtls_path .. "/lombok.jar"
 
@@ -40,7 +40,7 @@ local config = {
     '--add-opens', 'java.base/java.util=ALL-UNNAMED',
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
     '-jar', path_to_jar,
-    '-configuration', lsp_server_path,
+    '-configuration', platform_config,
     '-data', workspace_dir,
   },
 
