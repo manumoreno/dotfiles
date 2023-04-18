@@ -35,6 +35,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.local/cache
 ```
+7. One final thing, it would not hurt to add `$XDG_DATA_HOME/nvim/mason/packages/jdtls` to your PATH.
 
 ## Credits
 It goes without saying, many snippets of code contained herein were found/borrowed from other people out there. Thank you!
