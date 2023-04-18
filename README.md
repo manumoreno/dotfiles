@@ -37,4 +37,5 @@ export XDG_CACHE_HOME=$HOME/.local/cache
 7. One final thing, it would not hurt to add `$XDG_DATA_HOME/nvim/mason/packages/jdtls` to your PATH.
 
 ## Credits
+My jdtls configuration is mainly based on [these instructions](https://github.com/mfussenegger/nvim-jdtls) provided by mfussenegger.
 It goes without saying, many snippets of code contained herein were found/borrowed from other people out there. Thank you!
