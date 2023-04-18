@@ -15,7 +15,7 @@ Lessons learned:
 1. Resist the temptation of installing binaries manually. Mason does a great job installing jdtls (as long as go is installed in your system).
 2. The config file creates the workspace directory automatically.
 3. Use the ```~/.config/nvim/ftplugin/java.lua``` config as the basis of your config and tweak as necessary. Be sure to test the values of the parameters at the top!
-4. You can use this (https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml)[Java style guide specification].
+4. You can use this [Java style guide specification](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml).
 5. jtdls requires Java 17 or greater
 6. Make sure your XDG directories are properly set up in your user environment.
 Example:
