@@ -1,5 +1,5 @@
 local plugin_name = 'trailing-whitespace'
-local status_ok, twhitespace = pcall(require, plugin_name)
+local status_ok, trailing_whitespace = pcall(require, plugin_name)
 if not status_ok then
 	print("ERROR: " .. plugin_name .. " plugin")
 	return
@@ -8,7 +8,7 @@ else
 end
 
 
-twhitespace.setup {
+trailing_whitespace.setup {
   patterns = { '\\s\\+$' },
   palette = { markdown = 'RosyBrown' },
   default_color = 'PaleVioletRed',
